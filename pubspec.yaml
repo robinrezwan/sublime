@@ -1,0 +1,115 @@
+name: sublime
+description: A subtitle translation tool.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  logger: ^1.1.0                            # Logging
+  material_design_icons_flutter: ^5.0.6595  # Material Design Icons from Community
+  fluttertoast: ^8.0.9                      # Toast Notification
+  flutter_svg: ^0.22.0                      # SVG Image Renderer
+  provider: ^6.0.2                          # State Management
+  sqflite: ^2.0.2                           # SQLite Database
+  permission_handler: ^9.2.0                # Permission Handling
+  path: ^1.8.0                              # Path Formatting
+  file_picker: ^4.5.0                       # File Picker
+  percent_indicator: ^3.4.0                 # Progress Indicator
+  package_info_plus: ^1.4.0                 # Information about the Application Package
+  shared_preferences: ^2.0.13               # Shared Preferences
+  intl: ^0.17.0                             # DateTime Formatting
+  translator: ^0.1.7                        # Google Translate
+  rounded_loading_button: ^2.0.9            # Loading Button
+  html: ^0.15.0                             # HTML Parser
+  flutter_html: ^2.2.1                      # HTML Renderer
+  connectivity_plus: ^2.2.1                 # Connectivity Checking
+  app_settings: ^4.1.1                      # Settings Page Opening
+  flutter_colorpicker: ^1.0.3               # Color Picker
+  scrollable_positioned_list: ^0.2.3        # List View with Initial Scroll Position
+  chewie: ^1.3.0                            # Video Player
+  video_player: ^2.2.19                     # Video Player Controller
+  splash: ^1.1.0                            # Ink Splash Factory
+  encrypt: ^5.0.1                           # Data Encryption
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^1.0.4
+
+  flutter_launcher_icons: ^0.9.2            # Launcher Icon
+  flutter_native_splash: ^2.0.5             # Splash Screen
+
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "lib/assets/images/launcher_icon_legacy.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "lib/assets/images/launcher_icon.png"
+
+flutter_native_splash:
+  android: true
+  ios: false
+  color: "#FFFFFF"
+  color_dark: "#191919"
+  image: "lib/assets/images/splash_screen.png"
+  image_dark: "lib/assets/images/splash_screen_dark.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section
+  assets:
+    - lib/assets/images/launcher_icon_legacy.png
+    - lib/assets/images/launcher_icon.png
+    - lib/assets/images/splash_screen.png
+    - lib/assets/images/splash_screen_dark.png
+    - lib/assets/images/app_icon.svg
+    - lib/assets/images/home_background.png
+    - lib/assets/images/search_background.svg
+    - lib/assets/images/not_found_background.svg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section
+  fonts:
+    - family: Lobster Two
+      fonts:
+        - asset: lib/assets/fonts/lobster_two.ttf
+    - family: Product Sans
+      fonts:
+        - asset: lib/assets/fonts/product_sans.ttf
+
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
